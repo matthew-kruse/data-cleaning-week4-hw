@@ -16,25 +16,25 @@ The code in run_analysis.R has the following functions
 run() # helper function that downloads the data and performs the data analysis
 
 5 sub functions are called by run()
-load_data() 
-# downloads the data from the source site and places the zip in the current working directory
-# once the file is uncompressed, the function targets the specific test/training data files and loads them into R
-# once in R this function builds a list containing the data sets and returns it
+### load_data() 
+downloads the data from the source site and places the zip in the current working directory
+once the file is uncompressed, the function targets the specific test/training data files and loads them into R
+once in R this function builds a list containing the data sets and returns it
 
-extract_data()
-# removes all columns that aren't a mean or standard deviation
-# returns a list of the data, subjects, labels, and features
-# the data has only columns corresponding to the mean and std now
+### extract_data()
+removes all columns that aren't a mean or standard deviation
+returns a list of the data, subjects, labels, and features
+the data has only columns corresponding to the mean and std now
 
-set_activity_labels() 
-# sets the activity labels by its string name
+### set_activity_labels() 
+sets the activity labels by its string name
 
-merge_data_sets()
-# merge data sets, removes the list and creates a single data set with friendly column names
+### merge_data_sets()
+merge data sets, removes the list and creates a single data set with friendly column names
 
-summarize_data()
-# calculates the mean of each variable broken down by each unique subject activity pair
-# writes out to a file called results.txt
+### summarize_data()
+calculates the mean of each variable broken down by each unique subject activity pair
+writes out to a file called results.txt
 
 The columns of the results.txt file are:
 ```

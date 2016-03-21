@@ -13,7 +13,6 @@ run <- function() {
   data <- set_activity_labels(data)
   data <- merge_data_sets(data)
   data <- summarize_data(data)
-  data
 }
 
 # loads the source data files into a table and merges the data sets

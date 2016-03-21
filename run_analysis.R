@@ -2,8 +2,8 @@
 
 # execution should be as simple as 
 #source('run_analysis.R')
-#results <- run()
-#results
+#run()
+
 
 # runs the main program
 run <- function() {
